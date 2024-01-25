@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GiTwoCoins } from "react-icons/gi";
 
 const App = () => {
   const [headsText, setHeadsText] = useState('Heads');
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <div className="coin-flipper">
-      <h1>Simple Coin Flipper</h1>
+      <h1>Simple Coin Flipper <GiTwoCoins /> </h1>
       <div className={`coin ${isHeads ? 'heads' : 'tails'}`} onClick={flipCoin}>
         {isHeads ? headsText[0] : tailsText[0]}
       </div>
